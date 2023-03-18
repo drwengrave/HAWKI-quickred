@@ -1,5 +1,5 @@
 """
-HAWKI DATA REDUCTION SCRIPT - v1.0 (2019)
+HAWKI DATA REDUCTION SCRIPT - v1.0 (2023)
 
 To run this script call you need firt to first copy the science files into the main folder
 After that, you need to launch the following command:
@@ -17,8 +17,8 @@ import glob,sys,os,shutil
 from subprocess import call
 
 # Ask the user for the directory where the calibration data is located
-#science_data_directory = os.getcwd()
-science_data_directory = '/Users/lucaizzo/Documents/HAWKI_data/'
+science_data_directory = os.getcwd()
+
 os.chdir(science_data_directory)
 # 
 data_files = glob.glob(str(science_data_directory + '/HAWKI.*fits'))
